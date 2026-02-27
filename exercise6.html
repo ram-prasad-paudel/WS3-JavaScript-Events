@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 6 - Multiple Listeners</title>
+</head>
+<body>
+
+<button id="multiBtn">Click for Multiple</button>
+
+<script>
+let btn = document.getElementById("multiBtn");
+
+btn.onclick = function () {
+    alert("First!");
+};
+
+btn.onclick = function () {
+    alert("Second!");
+};
+
+btn.addEventListener("click", function () {
+    alert("Third!");
+});
+
+btn.addEventListener("click", function () {
+    alert("Fourth!");
+});
+</script>
+
+</body>
+</html>

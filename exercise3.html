@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3 - Named Function</title>
+</head>
+<body>
+
+<h1>Named Function Demo</h1>
+
+<p>Click the button to see your browser info.</p>
+
+<button onclick="showBrowser()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function showBrowser() {
+    document.getElementById("demo").innerHTML =
+        "Browser name: " + navigator.appName +
+        "<br>Code name: " + navigator.appCodeName;
+}
+</script>
+
+</body>
+</html>

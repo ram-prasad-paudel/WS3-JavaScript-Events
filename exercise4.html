@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 4 - Common Events</title>
+</head>
+<body onload="pageLoaded()">
+
+<h1>Common Events</h1>
+
+<select onchange="selectionChanged()">
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
+
+<br><br>
+
+<img src="image.jpg"
+     onmouseover="this.src='hover.jpg'"
+     onmouseout="this.src='image.jpg'"
+     alt="Hover Image"
+     width="200">
+
+<br><br>
+
+<input type="text" onkeydown="keyPressed()" placeholder="Type here">
+
+<script>
+function pageLoaded() {
+    alert("Page loaded!");
+}
+
+function selectionChanged() {
+    alert("Selection changed!");
+}
+
+function keyPressed() {
+    alert("Key pressed!");
+}
+</script>
+
+</body>
+</html>

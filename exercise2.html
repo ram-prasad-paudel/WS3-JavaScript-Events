@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 2 - Event Attributes</title>
+</head>
+<body>
+
+<h1>Event Attributes Demo</h1>
+
+<form onsubmit="return submitForm()">
+    <input type="text" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+
+<button onmouseover="mouseOver()" 
+        onmouseout="mouseOut()">
+        Hover Button
+</button>
+
+<script>
+function submitForm() {
+    alert("Form submitted!");
+    return false; // prevents page refresh
+}
+
+function mouseOver() {
+    alert("Mouse over!");
+}
+
+function mouseOut() {
+    alert("Mouse out!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 5 - Dynamic Listener</title>
+</head>
+<body>
+
+<h1 id="title">Click me!</h1>
+
+<button onclick="removeListener()">Remove Listener</button>
+
+<script>
+let element = document.getElementById("title");
+
+function sayHello() {
+    alert("Hello World!");
+}
+
+element.addEventListener("click", sayHello);
+
+function removeListener() {
+    element.removeEventListener("click", sayHello);
+    console.log("Listener removed!");
+}
+</script>
+
+</body>
+</html>
